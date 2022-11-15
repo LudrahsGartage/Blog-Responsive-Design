@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #141414;
+}
+
+header, main, .current-article, .about-me {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/* Header */
+
+header {
+    background: #FFFFFF;
+    display: flex;
+    padding: 1.25em;
+    justify-content: center;
+    align-items: baseline;
+    width: 90%;
+}
+
+.logo-text {
+    margin-right: auto;
+    margin-left: 0.5em;
+    font-weight: bold;
+    margin: 0 auto 0 0.2em;
+}
+
+.header-nav-item {
+    margin: 0 1em 0 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+.header-nav-item:hover, .header-nav-item:focus {
+    transform: scale(1.1);
+}
+
+/* Feature Article */
+
+.feature-article {
+    padding: 1em;
+    padding-top: 7em;
+    background: rgb(67, 67, 67) url(https://cdn.discordapp.com/attachments/1023555394431369297/1027645089750712330/computer_thyme.png);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 5px;
+}
+
+.feature-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-date{
+    order: -1;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    margin-bottom: 0.7em;
+}
+
+.feature-title {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.08;
+    margin-bottom: 0.25em;
+}
+
+@media (min-width: 670px) {
+    .feature-content {
+        max-width: 600px;
+    }
+}
+.feature-content, .article-content {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25;
+    letter-spacing: 1px;
+}
+
+/* Regular Articles */
+
+.article-grid {
+    margin: 1em 0;
+    padding: 1em 2em;
+    gap: 1em;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+}
+
+.regular-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 108.2%;
+    margin: 0.5em 0 0.25em 0;
+}
+
+.article-image {
+    max-width: 100%;
+    order: -2;
+    border-radius: 5px;
+}
+
+.article-date {
+    order: -1;
+    font-size: 0.875rem;
+    line-height: 1.25;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+/* Current Article */
+
+.current-article, .about-me {
+    max-width: 80%;
+}
+
+.current-article-image {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.current-title {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0.025em;
+}
+
+.content-section-header {
+    font: 2rem;
+}
+
+/* About Me */
+
+.about-image{
+    width: 50%;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.about-me .current-title {
+    font-size: 2rem;
+} 
+
+.image-card {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+@media (max-width: 900px) {
+    .image-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Footer */
+
+footer{
+    display: block;
+    background: #202020;
+    text-align: center;
+    padding: 1.5em;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: #ECECEC; 
+    margin: 0;
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.25;
+    color: #D7D7D7;
+    margin: 0.5em;
+}
+
+.recent-posts {
+    display: block;
+    margin: 0px auto;
+    width: fit-content;
+}
