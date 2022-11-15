@@ -37,6 +37,16 @@ header {
     transition: 0.2s;
 }
 
+@media (max-width: 900px) {
+    .logo-text, .header-nav-item {
+        font-size: 0.625rem;
+    }
+
+    header{
+        align-items: center;
+    }
+}
+
 .header-nav-item:hover, .header-nav-item:focus {
     transform: scale(1.1);
 }
